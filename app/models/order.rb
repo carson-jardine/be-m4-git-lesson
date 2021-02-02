@@ -17,7 +17,7 @@ class Order < ApplicationRecord
       quantity = cart[item.id.to_s].to_i
       until quantity == 0
         self.items << item
-        quantity -= 1
+        quantity -= 4
       end
     end
   end
